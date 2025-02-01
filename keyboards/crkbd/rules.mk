@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # MCU name
 MCU = atmega32u4
 
@@ -32,6 +31,3 @@ RGBLIGHT_SUPPORTED = no
 RGB_MATRIX_SUPPORTED = yes
 
 LAYOUTS = split_3x5_3 split_3x6_3
-=======
-DEFAULT_FOLDER = crkbd/rev1
->>>>>>> upstream/master
