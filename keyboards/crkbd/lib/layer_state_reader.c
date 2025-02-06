@@ -13,19 +13,19 @@ const char *read_layer_state(void) {
   switch (layer_state)
   {
   case L_BASE:
-    snprintf(layer_state_str, sizeof(layer_state_str), "base");
+    snprintf(layer_state_str, sizeof(layer_state_str), "layer: base");
     break;
   case L_LEFT_FN:
-    snprintf(layer_state_str, sizeof(layer_state_str), "> left-fn");
+    snprintf(layer_state_str, sizeof(layer_state_str), "layer: left");
     break;
   case L_RIGHT_FN:
-    snprintf(layer_state_str, sizeof(layer_state_str), "> right-fn");
+    snprintf(layer_state_str, sizeof(layer_state_str), "layer: right");
     break;
   case L_LEFT_MOD:
-    snprintf(layer_state_str, sizeof(layer_state_str), ">> left-mod");
+    snprintf(layer_state_str, sizeof(layer_state_str), "layer: left-mod");
     break;
   case L_RIGHT_MOD:
-    snprintf(layer_state_str, sizeof(layer_state_str), ">> right-mod");
+    snprintf(layer_state_str, sizeof(layer_state_str), "layer: right-mod");
     break;
   default:
 #if defined (LAYER_STATE_32BIT)
